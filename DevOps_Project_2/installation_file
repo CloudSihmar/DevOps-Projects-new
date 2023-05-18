@@ -13,7 +13,7 @@
 #sudo amazon-linux-extras install ansible2
 #ansible --version
 
-
+-----------------------------------------------
 # dynamic inventory installation 
 
 #sudo apt install -y python3
@@ -28,3 +28,15 @@ regions:
   - "us-east-2"
 filters:
   tag:Env: test
+
+
+-----------------------------------------
+
+create a key pair which will be used by our machine to connect with remote machine
+- create a key pair using  
+# ssh-keygen -t rsa
+# store it in /etc/ansible/  directory with any name
+
+# copy the content of the public key and mention in the terraform key resource file to create a key pair
+
+# mention the private key location in the ansible file to connect with the remote machines
