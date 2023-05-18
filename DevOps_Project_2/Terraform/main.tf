@@ -8,3 +8,8 @@ resource "aws_instance" "web-server" {
     Name = "${var.name}-server"
   }
 }
+
+resource "aws_key_pair" "deployer" {
+  key_name   = "ansible_key"
+  public_key = ""
+}
