@@ -4,7 +4,7 @@ resource "aws_instance" "web-server" {
   key_name = "ansible"
 
   tags = {
-    Environment = "dev"
+    Env = "test"
     Name = "${var.name}-server"
   }
 }
