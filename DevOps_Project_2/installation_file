@@ -29,6 +29,13 @@ regions:
 filters:
   tag:Env: test
 
+-------------------------------------------
+then go to /etc/ansible/ansible.cfg
+under
+[inventory]
+
+enable_plugins = aws_ec2
+
 
 -----------------------------------------
 
