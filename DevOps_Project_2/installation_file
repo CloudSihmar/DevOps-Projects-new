@@ -12,3 +12,19 @@
 #sudo yum update
 #sudo amazon-linux-extras install ansible2
 #ansible --version
+
+
+# dynamic inventory installation 
+
+#sudo apt install -y python3
+#sudo pip3 install --user boto3
+
+create a file named 
+
+vi inventory_aws_ec2.yml
+
+plugin: aws_ec2
+regions:
+  - "us-east-2"
+filters:
+  tag:Env: test
