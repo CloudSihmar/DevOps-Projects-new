@@ -1,5 +1,5 @@
 resource "aws_instance" "web-server" {
-  ami = "ami-0a695f0d95cefc163"
+  ami = "ami-08333bccc35d71140"
   instance_type = "t2.micro"
   key_name = "ansible_key"
 
