@@ -40,3 +40,14 @@ create a key pair which will be used by our machine to connect with remote machi
 # copy the content of the public key and mention in the terraform key resource file to create a key pair
 
 # mention the private key location in the ansible file to connect with the remote machines
+
+-----------------------------------------
+if get the below error >>
+ UNREACHABLE! => {"changed": false, "msg":"Failed to connect to the host via ssh: ssh: connect to host ec2-3-129-206-87.us-east-2.compute.amazonaws.com port 22:
+ Connection refused", "unreachable": true}
+ 
+ go to /etc/ansible/ansible.cfg
+ under
+ [defaults]
+ host_key_checking = False
+
