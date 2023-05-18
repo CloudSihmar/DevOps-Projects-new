@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "terraform-ansible-bucket-004"
-    key = "server_name/statefile"
-    region = "ap-south-1"
+    bucket = "terraform-ansible-jenkins-0419"
+    key = "server/statefile"
+    region = "us-east-2"
   }
 }  
