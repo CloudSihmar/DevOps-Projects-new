@@ -17,6 +17,7 @@
 # dynamic inventory installation 
 
 #sudo apt install -y python3
+#sudo apt install pip -y
 #sudo pip3 install --user boto3
 
 create a file named 
